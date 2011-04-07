@@ -1,4 +1,4 @@
-SOURCES=loader.o kernel.o common.o monitor.o
+SOURCES=loader.o kernel.o common.o monitor.o string.o
 CFLAGS=-I. -nostdlib -nostdinc -fno-builtin -fno-stack-protector
 
 LDFLAGS=-Tlinker.ld
