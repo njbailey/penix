@@ -1,5 +1,5 @@
-SOURCES=loader.o kernel.o
-CFLAGS=-nostdlib -nostdinc -fno-builtin -fno-stack-protector
+SOURCES=loader.o kernel.o common.o monitor.o
+CFLAGS=-I. -nostdlib -nostdinc -fno-builtin -fno-stack-protector
 
 LDFLAGS=-Tlinker.ld
 ASFLAGS=-felf
